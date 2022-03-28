@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1430142C27F1959200EB6D20 /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */; };
+		1430142E27F197E700EB6D20 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430142D27F197E700EB6D20 /* CodePushViewController.swift */; };
 		14FBD4CF27F059FE000B731F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4CE27F059FE000B731F /* AppDelegate.swift */; };
 		14FBD4D127F059FE000B731F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4D027F059FE000B731F /* SceneDelegate.swift */; };
 		14FBD4D327F059FE000B731F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4D227F059FE000B731F /* ViewController.swift */; };
 		14FBD4D627F059FE000B731F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD4D427F059FE000B731F /* Main.storyboard */; };
 		14FBD4D827F059FF000B731F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD4D727F059FF000B731F /* Assets.xcassets */; };
 		14FBD4DB27F059FF000B731F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14FBD4D927F059FF000B731F /* LaunchScreen.storyboard */; };
+		14FBD4E527F18E92000B731F /* SeguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4E427F18E92000B731F /* SeguePushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
+		1430142D27F197E700EB6D20 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
 		14FBD4CB27F059FE000B731F /* ScreenTransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FBD4CE27F059FE000B731F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14FBD4D027F059FE000B731F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		14FBD4D727F059FF000B731F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14FBD4DA27F059FF000B731F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14FBD4DC27F059FF000B731F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14FBD4E427F18E92000B731F /* SeguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				14FBD4D727F059FF000B731F /* Assets.xcassets */,
 				14FBD4D927F059FF000B731F /* LaunchScreen.storyboard */,
 				14FBD4DC27F059FF000B731F /* Info.plist */,
+				14FBD4E427F18E92000B731F /* SeguePushViewController.swift */,
+				1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */,
+				1430142D27F197E700EB6D20 /* CodePushViewController.swift */,
 			);
 			path = ScreenTransitionExample;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FBD4E527F18E92000B731F /* SeguePushViewController.swift in Sources */,
+				1430142E27F197E700EB6D20 /* CodePushViewController.swift in Sources */,
 				14FBD4D327F059FE000B731F /* ViewController.swift in Sources */,
 				14FBD4CF27F059FE000B731F /* AppDelegate.swift in Sources */,
+				1430142C27F1959200EB6D20 /* SeguePresentViewController.swift in Sources */,
 				14FBD4D127F059FE000B731F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
