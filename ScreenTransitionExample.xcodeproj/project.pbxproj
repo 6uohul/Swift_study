@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1430142C27F1959200EB6D20 /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */; };
 		1430142E27F197E700EB6D20 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430142D27F197E700EB6D20 /* CodePushViewController.swift */; };
+		14F5ED9327F3060900C1E643 /* CodePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5ED9227F3060900C1E643 /* CodePresentViewController.swift */; };
 		14FBD4CF27F059FE000B731F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4CE27F059FE000B731F /* AppDelegate.swift */; };
 		14FBD4D127F059FE000B731F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4D027F059FE000B731F /* SceneDelegate.swift */; };
 		14FBD4D327F059FE000B731F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBD4D227F059FE000B731F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
 		1430142D27F197E700EB6D20 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		14F5ED9227F3060900C1E643 /* CodePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresentViewController.swift; sourceTree = "<group>"; };
 		14FBD4CB27F059FE000B731F /* ScreenTransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FBD4CE27F059FE000B731F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14FBD4D027F059FE000B731F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				14FBD4E427F18E92000B731F /* SeguePushViewController.swift */,
 				1430142B27F1959200EB6D20 /* SeguePresentViewController.swift */,
 				1430142D27F197E700EB6D20 /* CodePushViewController.swift */,
+				14F5ED9227F3060900C1E643 /* CodePresentViewController.swift */,
 			);
 			path = ScreenTransitionExample;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				1430142E27F197E700EB6D20 /* CodePushViewController.swift in Sources */,
 				14FBD4D327F059FE000B731F /* ViewController.swift in Sources */,
 				14FBD4CF27F059FE000B731F /* AppDelegate.swift in Sources */,
+				14F5ED9327F3060900C1E643 /* CodePresentViewController.swift in Sources */,
 				1430142C27F1959200EB6D20 /* SeguePresentViewController.swift in Sources */,
 				14FBD4D127F059FE000B731F /* SceneDelegate.swift in Sources */,
 			);

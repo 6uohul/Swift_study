@@ -38,13 +38,15 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Code로 Push"/>
                                 <connections>
                                     <action selector="CodePushViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4I-4Q-lhP"/>
-                                    <segue destination="LVW-vq-SWb" kind="show" id="8gQ-3q-nRV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exs-Ps-QZy">
                                 <rect key="frame" x="25" y="486" width="364" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Code로 Present"/>
+                                <connections>
+                                    <action selector="btnCodePresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCo-Ts-9Dn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -124,7 +126,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
                                 <connections>
-                                    <action selector="BtnCodePush:" destination="LVW-vq-SWb" eventType="touchUpInside" id="9hg-ZQ-LI6"/>
                                     <action selector="btnBack:" destination="LVW-vq-SWb" eventType="touchUpInside" id="ZAn-VW-Nam"/>
                                 </connections>
                             </button>
@@ -137,6 +138,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1i-Cl-A9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="373"/>
+        </scene>
+        <!--Code Present View Controller-->
+        <scene sceneID="EiX-vJ-qGb">
+            <objects>
+                <viewController storyboardIdentifier="CodePresentViewController" id="1ai-W3-1Nk" customClass="CodePresentViewController" customModule="ScreenTransitionExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="to8-nd-Hl9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-n7-0Cx">
+                                <rect key="frame" x="149" y="451" width="117" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="1ai-W3-1Nk" eventType="touchUpInside" id="6PO-8u-ceX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Code로 Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-j6-Rla">
+                                <rect key="frame" x="124" y="399" width="167" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nSA-Ph-GRU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEE-bY-Lpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413.04347826087" y="372.99107142857139"/>
         </scene>
         <!--Segue Push View Controller-->
         <scene sceneID="8nN-KO-OPc">
