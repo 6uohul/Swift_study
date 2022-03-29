@@ -13,6 +13,7 @@
 		14F5EDA827F3221900C1E643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDA627F3221900C1E643 /* Main.storyboard */; };
 		14F5EDAA27F3221900C1E643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDA927F3221900C1E643 /* Assets.xcassets */; };
 		14F5EDAD27F3221900C1E643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDAB27F3221900C1E643 /* LaunchScreen.storyboard */; };
+		14F5EDB527F3429800C1E643 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5EDB427F3429800C1E643 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		14F5EDA927F3221900C1E643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F5EDAC27F3221900C1E643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14F5EDAE27F3221900C1E643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F5EDB427F3429800C1E643 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				14F5EDA927F3221900C1E643 /* Assets.xcassets */,
 				14F5EDAB27F3221900C1E643 /* LaunchScreen.storyboard */,
 				14F5EDAE27F3221900C1E643 /* Info.plist */,
+				14F5EDB427F3429800C1E643 /* SettingViewController.swift */,
 			);
 			path = LEDBoard;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				14F5EDA527F3221900C1E643 /* ViewController.swift in Sources */,
 				14F5EDA127F3221900C1E643 /* AppDelegate.swift in Sources */,
 				14F5EDA327F3221900C1E643 /* SceneDelegate.swift in Sources */,
+				14F5EDB527F3429800C1E643 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
