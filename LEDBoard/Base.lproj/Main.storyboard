@@ -132,7 +132,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="black_circle" title=""/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="8hA-HN-bBt"/>
+                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="z5P-YI-qQp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-eB-fz7">
@@ -140,7 +140,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="blue_circle"/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="cOz-sX-yea"/>
+                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="61H-bf-aPJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-fs-1PF">
@@ -148,7 +148,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="orange_circle"/>
                                                 <connections>
-                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="ycO-jh-XQ8"/>
+                                                    <action selector="tapBackgroundColor:" destination="txS-9c-z2E" eventType="touchUpInside" id="R5i-DF-eHl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
