@@ -13,6 +13,7 @@
 		14F5EDCA27F58E9400C1E643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDC827F58E9400C1E643 /* Main.storyboard */; };
 		14F5EDCC27F58E9500C1E643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDCB27F58E9500C1E643 /* Assets.xcassets */; };
 		14F5EDCF27F58E9500C1E643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F5EDCD27F58E9500C1E643 /* LaunchScreen.storyboard */; };
+		14F5EDD727F6B49A00C1E643 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5EDD627F6B49A00C1E643 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		14F5EDCB27F58E9500C1E643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F5EDCE27F58E9500C1E643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14F5EDD027F58E9500C1E643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F5EDD627F6B49A00C1E643 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				14F5EDCB27F58E9500C1E643 /* Assets.xcassets */,
 				14F5EDCD27F58E9500C1E643 /* LaunchScreen.storyboard */,
 				14F5EDD027F58E9500C1E643 /* Info.plist */,
+				14F5EDD627F6B49A00C1E643 /* RoundButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F5EDD727F6B49A00C1E643 /* RoundButton.swift in Sources */,
 				14F5EDC727F58E9400C1E643 /* ViewController.swift in Sources */,
 				14F5EDC327F58E9400C1E643 /* AppDelegate.swift in Sources */,
 				14F5EDC527F58E9400C1E643 /* SceneDelegate.swift in Sources */,
