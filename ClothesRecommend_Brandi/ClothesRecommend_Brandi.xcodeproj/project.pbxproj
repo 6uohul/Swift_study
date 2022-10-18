@@ -14,6 +14,11 @@
 		14AFB1D328FF0DFC00C051E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AFB1D228FF0DFC00C051E1 /* Assets.xcassets */; };
 		14AFB1D628FF0DFC00C051E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AFB1D428FF0DFC00C051E1 /* LaunchScreen.storyboard */; };
 		14AFB1DE28FF0E3500C051E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */; };
+		14AFB1E128FF1B0A00C051E1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14AFB1E028FF1B0A00C051E1 /* SnapKit */; };
+		14AFB1E428FF1B6200C051E1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 14AFB1E328FF1B6200C051E1 /* Then */; };
+		14AFB1E728FF1B8100C051E1 /* SwiftyColor in Frameworks */ = {isa = PBXBuildFile; productRef = 14AFB1E628FF1B8100C051E1 /* SwiftyColor */; };
+		14AFB1E928FF1C7600C051E1 /* ClothesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */; };
+		14AFB1EB28FF270D00C051E1 /* ClothesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,8 @@
 		14AFB1D528FF0DFC00C051E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AFB1D728FF0DFC00C051E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesModel.swift; sourceTree = "<group>"; };
+		14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFB1E128FF1B0A00C051E1 /* SnapKit in Frameworks */,
+				14AFB1E728FF1B8100C051E1 /* SwiftyColor in Frameworks */,
+				14AFB1E428FF1B6200C051E1 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,8 @@
 				14AFB1D428FF0DFC00C051E1 /* LaunchScreen.storyboard */,
 				14AFB1D728FF0DFC00C051E1 /* Info.plist */,
 				14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */,
+				14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */,
+				14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */,
 			);
 			path = ClothesRecommend_Brandi;
 			sourceTree = "<group>";
@@ -86,6 +98,11 @@
 			dependencies = (
 			);
 			name = ClothesRecommend_Brandi;
+			packageProductDependencies = (
+				14AFB1E028FF1B0A00C051E1 /* SnapKit */,
+				14AFB1E328FF1B6200C051E1 /* Then */,
+				14AFB1E628FF1B8100C051E1 /* SwiftyColor */,
+			);
 			productName = ClothesRecommend_Brandi;
 			productReference = 14AFB1C628FF0DFB00C051E1 /* ClothesRecommend_Brandi.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +131,11 @@
 				Base,
 			);
 			mainGroup = 14AFB1BD28FF0DFB00C051E1;
+			packageReferences = (
+				14AFB1DF28FF1B0A00C051E1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				14AFB1E228FF1B6200C051E1 /* XCRemoteSwiftPackageReference "Then" */,
+				14AFB1E528FF1B8100C051E1 /* XCRemoteSwiftPackageReference "SwiftyColor" */,
+			);
 			productRefGroup = 14AFB1C728FF0DFB00C051E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFB1E928FF1C7600C051E1 /* ClothesModel.swift in Sources */,
 				14AFB1CE28FF0DFB00C051E1 /* ViewController.swift in Sources */,
 				14AFB1CA28FF0DFB00C051E1 /* AppDelegate.swift in Sources */,
+				14AFB1EB28FF270D00C051E1 /* ClothesCollectionViewCell.swift in Sources */,
 				14AFB1CC28FF0DFB00C051E1 /* SceneDelegate.swift in Sources */,
 				14AFB1DE28FF0E3500C051E1 /* HomeViewController.swift in Sources */,
 			);
@@ -360,6 +384,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14AFB1DF28FF1B0A00C051E1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		14AFB1E228FF1B6200C051E1 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		14AFB1E528FF1B8100C051E1 /* XCRemoteSwiftPackageReference "SwiftyColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/SwiftyColor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14AFB1E028FF1B0A00C051E1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14AFB1DF28FF1B0A00C051E1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		14AFB1E328FF1B6200C051E1 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14AFB1E228FF1B6200C051E1 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		14AFB1E628FF1B8100C051E1 /* SwiftyColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14AFB1E528FF1B8100C051E1 /* XCRemoteSwiftPackageReference "SwiftyColor" */;
+			productName = SwiftyColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14AFB1BE28FF0DFB00C051E1 /* Project object */;
 }
