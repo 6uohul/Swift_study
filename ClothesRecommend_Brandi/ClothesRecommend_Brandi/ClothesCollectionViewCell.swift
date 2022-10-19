@@ -17,7 +17,10 @@ final class ClothesCollectionViewCell: UICollectionViewCell {
     static let identifier = "ClothesCollectionViewCell"
     
     // MARK: - UI Components
-    private let clothesContainerView = UIView()
+    private let clothesContainerView = UIView().then {
+        $0.layer.cornerRadius = 10
+        $0.clipsToBounds = true
+    }
     private let clothesImageView = UIImageView()
     private let titleLabel = UILabel().then {
         $0.textColor = .black
@@ -87,7 +90,16 @@ extension ClothesCollectionViewCell {
     func dataBind(model: ClothesModel) {
         titleLabel.text = model.title
         brandLabel.text = model.brand
-        priceLabel.text = model.price
+        priceLabel.text = DecimalWon(value: model.price)
         clothesImageView.image = UIImage(named: model.clothesImage)
     }
+    
+    //MARK: - 천단위마다 ,표시
+    func DecimalWon(value: Int) -> String{
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let result = numberFormatter.string(from: NSNumber(value: value))! + "원"
+            
+            return result
+        }
 }

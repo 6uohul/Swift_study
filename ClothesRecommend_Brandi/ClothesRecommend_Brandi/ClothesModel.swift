@@ -11,5 +11,5 @@ struct ClothesModel {
     let clothesImage : String
     let title : String
     let brand : String
-    let price : String
+    let price : Int
 }
