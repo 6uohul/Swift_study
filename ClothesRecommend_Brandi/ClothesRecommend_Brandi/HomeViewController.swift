@@ -68,6 +68,7 @@ class HomeViewController: UIViewController {
         layout()
         register()
         setting()
+        navigationController?.navigationBar.isHidden = true
     }
     
     //검색 버튼
@@ -93,10 +94,6 @@ extension HomeViewController {
             $0.height.equalTo(calculateCellHeight())
         }
         view.addSubview(BrandiLabel)
-//        BrandiLabel.snp.makeConstraints {
-//            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(5)
-//            $0.leading.equalTo(view.safeAreaLayoutGuide).offset(5)
-//        }
     }
     
     func calculateCellHeight() -> CGFloat {
