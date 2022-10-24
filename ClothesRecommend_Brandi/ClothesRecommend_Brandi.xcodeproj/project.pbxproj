@@ -20,10 +20,10 @@
 		14AFB1E928FF1C7600C051E1 /* ClothesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */; };
 		14AFB1EB28FF270D00C051E1 /* ClothesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */; };
 		14AFB1ED290069B100C051E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1EC290069B100C051E1 /* TabBarViewController.swift */; };
-		14AFB1F029006A6500C051E1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1EF29006A6500C051E1 /* SecondViewController.swift */; };
-		14AFB1F229006A7100C051E1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F129006A7100C051E1 /* ThirdViewController.swift */; };
-		14AFB1F429006A7B00C051E1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F329006A7B00C051E1 /* FourthViewController.swift */; };
-		14AFB1F629006A9300C051E1 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F529006A9300C051E1 /* FifthViewController.swift */; };
+		14AFB1F029006A6500C051E1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1EF29006A6500C051E1 /* CategoryViewController.swift */; };
+		14AFB1F229006A7100C051E1 /* DailyDeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F129006A7100C051E1 /* DailyDeliveryViewController.swift */; };
+		14AFB1F429006A7B00C051E1 /* FanciedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F329006A7B00C051E1 /* FanciedViewController.swift */; };
+		14AFB1F629006A9300C051E1 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1F529006A9300C051E1 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,10 @@
 		14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesModel.swift; sourceTree = "<group>"; };
 		14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesCollectionViewCell.swift; sourceTree = "<group>"; };
 		14AFB1EC290069B100C051E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		14AFB1EF29006A6500C051E1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		14AFB1F129006A7100C051E1 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		14AFB1F329006A7B00C051E1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		14AFB1F529006A9300C051E1 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		14AFB1EF29006A6500C051E1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		14AFB1F129006A7100C051E1 /* DailyDeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDeliveryViewController.swift; sourceTree = "<group>"; };
+		14AFB1F329006A7B00C051E1 /* FanciedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanciedViewController.swift; sourceTree = "<group>"; };
+		14AFB1F529006A9300C051E1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,10 @@
 			children = (
 				14AFB1EC290069B100C051E1 /* TabBarViewController.swift */,
 				14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */,
-				14AFB1EF29006A6500C051E1 /* SecondViewController.swift */,
-				14AFB1F129006A7100C051E1 /* ThirdViewController.swift */,
-				14AFB1F329006A7B00C051E1 /* FourthViewController.swift */,
-				14AFB1F529006A9300C051E1 /* FifthViewController.swift */,
+				14AFB1EF29006A6500C051E1 /* CategoryViewController.swift */,
+				14AFB1F129006A7100C051E1 /* DailyDeliveryViewController.swift */,
+				14AFB1F329006A7B00C051E1 /* FanciedViewController.swift */,
+				14AFB1F529006A9300C051E1 /* MyPageViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -186,12 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14AFB1F029006A6500C051E1 /* SecondViewController.swift in Sources */,
-				14AFB1F229006A7100C051E1 /* ThirdViewController.swift in Sources */,
+				14AFB1F029006A6500C051E1 /* CategoryViewController.swift in Sources */,
+				14AFB1F229006A7100C051E1 /* DailyDeliveryViewController.swift in Sources */,
 				14AFB1E928FF1C7600C051E1 /* ClothesModel.swift in Sources */,
-				14AFB1F629006A9300C051E1 /* FifthViewController.swift in Sources */,
+				14AFB1F629006A9300C051E1 /* MyPageViewController.swift in Sources */,
 				14AFB1CE28FF0DFB00C051E1 /* ViewController.swift in Sources */,
-				14AFB1F429006A7B00C051E1 /* FourthViewController.swift in Sources */,
+				14AFB1F429006A7B00C051E1 /* FanciedViewController.swift in Sources */,
 				14AFB1CA28FF0DFB00C051E1 /* AppDelegate.swift in Sources */,
 				14AFB1EB28FF270D00C051E1 /* ClothesCollectionViewCell.swift in Sources */,
 				14AFB1ED290069B100C051E1 /* TabBarViewController.swift in Sources */,

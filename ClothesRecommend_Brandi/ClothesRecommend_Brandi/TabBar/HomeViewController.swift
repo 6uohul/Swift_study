@@ -65,10 +65,10 @@ class HomeViewController: UIViewController {
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         layout()
         register()
         setting()
-        navigationController?.navigationBar.isHidden = false
     }
     
     //검색 버튼
