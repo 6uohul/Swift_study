@@ -68,7 +68,7 @@ class HomeViewController: UIViewController {
         layout()
         register()
         setting()
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
     
     //검색 버튼
@@ -90,7 +90,7 @@ extension HomeViewController {
         clothesCollectionView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(15)
             $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
-            $0.bottom.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide)
             $0.height.equalTo(calculateCellHeight())
         }
         view.addSubview(BrandiLabel)

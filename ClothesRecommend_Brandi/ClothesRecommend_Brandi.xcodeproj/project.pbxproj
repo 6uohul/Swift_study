@@ -86,7 +86,6 @@
 				14AFB1D228FF0DFC00C051E1 /* Assets.xcassets */,
 				14AFB1D428FF0DFC00C051E1 /* LaunchScreen.storyboard */,
 				14AFB1D728FF0DFC00C051E1 /* Info.plist */,
-				14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */,
 				14AFB1E828FF1C7600C051E1 /* ClothesModel.swift */,
 				14AFB1EA28FF270D00C051E1 /* ClothesCollectionViewCell.swift */,
 			);
@@ -97,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				14AFB1EC290069B100C051E1 /* TabBarViewController.swift */,
+				14AFB1DD28FF0E3500C051E1 /* HomeViewController.swift */,
 				14AFB1EF29006A6500C051E1 /* SecondViewController.swift */,
 				14AFB1F129006A7100C051E1 /* ThirdViewController.swift */,
 				14AFB1F329006A7B00C051E1 /* FourthViewController.swift */,
