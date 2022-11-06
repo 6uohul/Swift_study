@@ -30,7 +30,25 @@ extension Marvel : TargetType {
   }
   
   public var task: Moya.Task {
-    return .requestPlain
+    let ts = "\(Date().timeIntervalSince1970)"
+      // 1
+      let hash = (ts + Marvel.privateKey + Marvel.publicKey).md5
+      
+      // 2
+      let authParams = ["apikey": Marvel.publicKey, "ts": ts, "hash": hash]
+      
+      switch self {
+      case .comics:
+        // 3
+        return .requestParameters(
+          parameters: [
+            "format": "comic",
+            "formatType": "comic",
+            "orderBy": "-onsaleDate",
+            "dateDescriptor": "lastWeek",
+            "limit": 50] + authParams,
+          encoding: URLEncoding.default)
+      }
   }
   
   public var headers: [String : String]? {

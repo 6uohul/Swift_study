@@ -34,6 +34,9 @@ import Moya
 class CardViewController: UIViewController {
   // - MARK: - Dependencies
   private var comic: Comic?
+  
+  private let provider = MoyaProvider<Imgur>()
+  private var uploadResult: UploadResult?
 
   // - MARK: - Outlets
   @IBOutlet weak private var lblTitle: UILabel!
@@ -66,7 +69,62 @@ class CardViewController: UIViewController {
 // MARK: - Imgur handling
 extension CardViewController {
   private func layoutCard(comic: Comic) {
+    // 1
+    lblTitle.text = comic.title
+    lblDesc.text = comic.description ?? "Not available"
 
+    // 2
+    if comic.characters.items.isEmpty {
+      lblChars.text = "No characters"
+    } else {
+      lblChars.text = comic.characters.items
+                           .map { $0.name }
+                           .joined(separator: ", ")
+    }
+    
+    // 1
+    let card = snapCard()
+
+    // 2
+    provider.request(.upload(card),
+      // 3
+      callbackQueue: DispatchQueue.main,
+      progress: { [weak self] progress in
+        // 4
+        self?.progressBar.setProgress(Float(progress.progress), animated: true)
+      },
+      completion: { [weak self] response in
+        guard let self = self else { return }
+        
+        // 5
+        UIView.animate(withDuration: 0.15) {
+          self.viewUpload.alpha = 0.0
+          self.btnShare.alpha = 0.0
+        }
+        
+        // 6
+        switch response {
+        case .success(let result):
+          do {
+            let upload = try result.map(ImgurResponse<UploadResult>.self)
+            
+            self.uploadResult = upload.data
+            self.btnDelete.alpha = 1.0
+            
+            self.presentShare(image: card, url: upload.data.link)
+          } catch {
+            self.presentError()
+          }
+        case .failure:
+          self.presentError()
+        }
+    })
+
+    // 3
+    lblDate.text = dateFormatter.string(from: comic.onsaleDate)
+
+    // 4
+    image.kf.setImage(with: comic.thumbnail.url)
   }
 
   @IBAction private func uploadCard() {
@@ -80,7 +138,31 @@ extension CardViewController {
   }
 
   @IBAction private func deleteCard() {
+    // 1
+    guard let uploadResult = uploadResult else { return }
+    btnDelete.isEnabled = false
 
+    // 2
+    provider.request(.delete(uploadResult.deletehash)) { [weak self] response in
+      guard let self = self else { return }
+
+      let message: String
+
+      // 3
+      switch response {
+      case .success:
+        message = "Deleted successfully!"
+        self.btnDelete.alpha = 0.0
+      case .failure:
+        message = "Failed deleting card! Try again later."
+        self.btnDelete.isEnabled = true
+      }
+
+      let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: "Done", style: .cancel))
+
+      self.present(alert, animated: true, completion: nil)
+    }
   }
 }
 
