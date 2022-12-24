@@ -96,10 +96,10 @@ extension ClothesCollectionViewCell {
     
     //MARK: - 천단위마다 ,표시
     func DecimalWon(value: Int) -> String{
-            let numberFormatter = NumberFormatter()
-            numberFormatter.numberStyle = .decimal
-            let result = numberFormatter.string(from: NSNumber(value: value))! + "원"
-            
-            return result
-        }
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let result = numberFormatter.string(from: NSNumber(value: value))! + "원"
+        
+        return result
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1404713B2927FEB30012FD4A /* dd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404713A2927FEB30012FD4A /* dd.swift */; };
 		14AFB1CA28FF0DFB00C051E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1C928FF0DFB00C051E1 /* AppDelegate.swift */; };
 		14AFB1CC28FF0DFB00C051E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1CB28FF0DFB00C051E1 /* SceneDelegate.swift */; };
 		14AFB1CE28FF0DFB00C051E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFB1CD28FF0DFB00C051E1 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1404713A2927FEB30012FD4A /* dd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dd.swift; sourceTree = "<group>"; };
 		14AFB1C628FF0DFB00C051E1 /* ClothesRecommend_Brandi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesRecommend_Brandi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AFB1C928FF0DFB00C051E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14AFB1CB28FF0DFB00C051E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				14AFB1EF29006A6500C051E1 /* CategoryViewController.swift */,
 				14AFB1F129006A7100C051E1 /* DailyDeliveryViewController.swift */,
 				14AFB1F329006A7B00C051E1 /* FanciedViewController.swift */,
+				1404713A2927FEB30012FD4A /* dd.swift */,
 				14AFB1F529006A9300C051E1 /* MyPageViewController.swift */,
 			);
 			path = TabBar;
@@ -193,6 +196,7 @@
 				14AFB1CE28FF0DFB00C051E1 /* ViewController.swift in Sources */,
 				14AFB1F429006A7B00C051E1 /* FanciedViewController.swift in Sources */,
 				14AFB1CA28FF0DFB00C051E1 /* AppDelegate.swift in Sources */,
+				1404713B2927FEB30012FD4A /* dd.swift in Sources */,
 				14AFB1EB28FF270D00C051E1 /* ClothesCollectionViewCell.swift in Sources */,
 				14AFB1ED290069B100C051E1 /* TabBarViewController.swift in Sources */,
 				14AFB1CC28FF0DFB00C051E1 /* SceneDelegate.swift in Sources */,
