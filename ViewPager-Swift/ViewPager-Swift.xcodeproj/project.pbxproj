@@ -16,6 +16,8 @@
 		147385542956EF1E003480C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147385532956EF1E003480C2 /* MainViewController.swift */; };
 		147385572956F018003480C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 147385562956F018003480C2 /* SnapKit */; };
 		1473855A2956F023003480C2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 147385592956F023003480C2 /* Then */; };
+		1473855C2956F2D5003480C2 /* MenuTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */; };
+		147F6603295C2462002333C7 /* addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6602295C2462002333C7 /* addSubviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		147385412956DF0F003480C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147385432956DF0F003480C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147385532956EF1E003480C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		147F6602295C2462002333C7 /* addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		147385512956EEF0003480C2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				147F6602295C2462002333C7 /* addSubviews.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				147385532956EF1E003480C2 /* MainViewController.swift */,
+				1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1473853A2956DF0D003480C2 /* ViewController.swift in Sources */,
+				147F6603295C2462002333C7 /* addSubviews.swift in Sources */,
+				1473855C2956F2D5003480C2 /* MenuTabCollectionViewCell.swift in Sources */,
 				147385362956DF0D003480C2 /* AppDelegate.swift in Sources */,
 				147385382956DF0D003480C2 /* SceneDelegate.swift in Sources */,
 				147385542956EF1E003480C2 /* MainViewController.swift in Sources */,
