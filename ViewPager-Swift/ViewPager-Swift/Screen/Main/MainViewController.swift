@@ -42,8 +42,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    private let containerView = UIView()
-    
     lazy var pageViewController: UIPageViewController = {
         let vc = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         return vc
@@ -109,17 +107,15 @@ extension MainViewController {
     //MARK: - setLayout
     
     private func setLayout() {
-        view.addSubviews(collectionView, containerView)
+        view.addSubviews(collectionView, pageViewController.view)
         
         collectionView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(52)
         }
-        
-        containerView.addSubviews(pageViewController.view)
-        
-        containerView.snp.makeConstraints {
+
+        pageViewController.view.snp.makeConstraints {
             $0.top.equalTo(collectionView.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
         }

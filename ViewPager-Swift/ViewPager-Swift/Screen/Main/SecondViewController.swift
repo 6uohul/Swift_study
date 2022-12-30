@@ -8,11 +8,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
-    static let identifier = "SecondVC"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
     }
 }

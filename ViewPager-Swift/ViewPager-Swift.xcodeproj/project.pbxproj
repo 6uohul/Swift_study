@@ -20,6 +20,8 @@
 		147F6603295C2462002333C7 /* addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6602295C2462002333C7 /* addSubviews.swift */; };
 		147F6607295C2AE2002333C7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6606295C2AE2002333C7 /* FirstViewController.swift */; };
 		147F6609295C2BB1002333C7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6608295C2BB1002333C7 /* SecondViewController.swift */; };
+		147F660F295EF3D4002333C7 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F660E295EF3D4002333C7 /* BookTableViewCell.swift */; };
+		147F6611295EFB5B002333C7 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6610295EFB5B002333C7 /* RecommendModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		147F6602295C2462002333C7 /* addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubviews.swift; sourceTree = "<group>"; };
 		147F6606295C2AE2002333C7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		147F6608295C2BB1002333C7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		147F660E295EF3D4002333C7 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		147F6610295EFB5B002333C7 /* RecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */,
 				147F6606295C2AE2002333C7 /* FirstViewController.swift */,
 				147F6608295C2BB1002333C7 /* SecondViewController.swift */,
+				147F660E295EF3D4002333C7 /* BookTableViewCell.swift */,
+				147F6610295EFB5B002333C7 /* RecommendModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -205,9 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147F6611295EFB5B002333C7 /* RecommendModel.swift in Sources */,
 				1473853A2956DF0D003480C2 /* ViewController.swift in Sources */,
 				147F6603295C2462002333C7 /* addSubviews.swift in Sources */,
 				147F6609295C2BB1002333C7 /* SecondViewController.swift in Sources */,
+				147F660F295EF3D4002333C7 /* BookTableViewCell.swift in Sources */,
 				147F6607295C2AE2002333C7 /* FirstViewController.swift in Sources */,
 				1473855C2956F2D5003480C2 /* MenuTabCollectionViewCell.swift in Sources */,
 				147385362956DF0D003480C2 /* AppDelegate.swift in Sources */,
