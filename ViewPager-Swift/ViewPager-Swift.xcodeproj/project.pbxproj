@@ -18,6 +18,8 @@
 		1473855A2956F023003480C2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 147385592956F023003480C2 /* Then */; };
 		1473855C2956F2D5003480C2 /* MenuTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */; };
 		147F6603295C2462002333C7 /* addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6602295C2462002333C7 /* addSubviews.swift */; };
+		147F6607295C2AE2002333C7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6606295C2AE2002333C7 /* FirstViewController.swift */; };
+		147F6609295C2BB1002333C7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F6608295C2BB1002333C7 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		147385532956EF1E003480C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabCollectionViewCell.swift; sourceTree = "<group>"; };
 		147F6602295C2462002333C7 /* addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubviews.swift; sourceTree = "<group>"; };
+		147F6606295C2AE2002333C7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		147F6608295C2BB1002333C7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			children = (
 				147385532956EF1E003480C2 /* MainViewController.swift */,
 				1473855B2956F2D5003480C2 /* MenuTabCollectionViewCell.swift */,
+				147F6606295C2AE2002333C7 /* FirstViewController.swift */,
+				147F6608295C2BB1002333C7 /* SecondViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			files = (
 				1473853A2956DF0D003480C2 /* ViewController.swift in Sources */,
 				147F6603295C2462002333C7 /* addSubviews.swift in Sources */,
+				147F6609295C2BB1002333C7 /* SecondViewController.swift in Sources */,
+				147F6607295C2AE2002333C7 /* FirstViewController.swift in Sources */,
 				1473855C2956F2D5003480C2 /* MenuTabCollectionViewCell.swift in Sources */,
 				147385362956DF0D003480C2 /* AppDelegate.swift in Sources */,
 				147385382956DF0D003480C2 /* SceneDelegate.swift in Sources */,

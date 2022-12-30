@@ -13,15 +13,9 @@ class MenuTabCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "MenuTabCollectionViewCell"
     
-    override var isHighlighted: Bool {
+    override var isHighlighted : Bool {
         didSet {
-            menuUnderLineView.backgroundColor = isSelected ? .darkGray : .lightGray
-        }
-    }
-    
-    override var isSelected: Bool {
-        didSet {
-            menuUnderLineView.backgroundColor = isSelected ? .darkGray : .lightGray
+            menuUnderLineView.backgroundColor = isSelected ? .darkGray : .clear
             UIView.animate(withDuration: 0.3,
                            delay: 0,
                            options: .curveEaseOut,
@@ -32,7 +26,20 @@ class MenuTabCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private let menuLabel = UILabel().then {
+    override var isSelected: Bool {
+        didSet {
+            menuUnderLineView.backgroundColor = isSelected ? .darkGray : .clear
+            UIView.animate(withDuration: 0.3,
+                           delay: 0,
+                           options: .curveEaseOut,
+                           animations: {
+                self.menuUnderLineView.layoutIfNeeded()
+                self.menuUnderLineView.alpha = self.isSelected ? 1 : 0.1
+            }, completion: nil)
+        }
+    }
+    
+    private var menuLabel = UILabel().then {
         $0.text = "book"
         $0.font = .systemFont(ofSize: 14, weight: .bold)
     }
