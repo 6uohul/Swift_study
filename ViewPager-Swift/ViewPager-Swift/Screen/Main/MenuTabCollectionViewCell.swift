@@ -70,4 +70,8 @@ extension MenuTabCollectionViewCell {
             $0.height.equalTo(2)
         }
     }
+    
+    func dataBind(menuLabel: String) {
+        self.menuLabel.text = menuLabel
+    }
 }

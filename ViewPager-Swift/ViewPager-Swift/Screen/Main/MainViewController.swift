@@ -11,6 +11,8 @@ import SnapKit
 
 class MainViewController: UIViewController {
 
+    var menuName : [String] = ["추천받은 책", "추천한 책"]
+    
     //MARK: - UI Components
     
     // Menu Tab
@@ -67,7 +69,7 @@ class MainViewController: UIViewController {
         currentPage = indexPath.item
     }
     
-    private func bind(newValue: Int) {
+    func bind(newValue: Int) {
         // pageViewController에서 paging한 경우
         collectionView.selectItem(at: IndexPath(item: currentPage, section: 0), animated: true, scrollPosition: .centeredHorizontally)
     }
@@ -81,8 +83,9 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuTabCollectionViewCell.identifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuTabCollectionViewCell.identifier, for: indexPath) as? MenuTabCollectionViewCell else { return UICollectionViewCell() }
         didTapCell(at: indexPath)
+        cell.dataBind(menuLabel: menuName[indexPath.item])
         return cell
     }
     
