@@ -7,7 +7,11 @@
 
 import Foundation
 
+import Combine
+
 class ClockViewModel {
+    
+    @Published var combineTime: String = "Combine"
     
     var didChangeTime: ((ClockViewModel) -> Void)?
 
@@ -24,5 +28,6 @@ class ClockViewModel {
     // 5. 매 초마다 호출되면서 closureTime에 시간을 담아줌
     func checkTime() {
         closureTime = Clock.currentTime()
+        combineTime = Clock.currentTime()
     }
 }

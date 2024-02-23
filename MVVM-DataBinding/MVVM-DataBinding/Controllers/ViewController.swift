@@ -7,6 +7,7 @@
 
 import UIKit
 
+import Combine
 import SnapKit
 
 class ViewController: UIViewController {
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     private var closureTimeLabel = UILabel()
     private var observableTimeLabel = UILabel()
     private var combineTimeLabel = UILabel()
+    
+    private var cancellable: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +39,12 @@ class ViewController: UIViewController {
         viewModel.didChangeTime = {[weak self] viewModel in
             self?.closureTimeLabel.text = viewModel.closureTime
         }
+        
+        viewModel.$combineTime
+        .compactMap{String($0)}
+        .assign(to: \.text, on: combineTimeLabel)
+        .store(in: &cancellable)
+        
     }
     
     private func setLayout() {
