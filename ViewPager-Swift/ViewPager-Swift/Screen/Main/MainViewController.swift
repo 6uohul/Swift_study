@@ -3,7 +3,7 @@
 //  ViewPager-Swift
 //
 //  Created by 김인영 on 2022/12/24.
-//
+//2
 
 import UIKit
 import Then
@@ -14,6 +14,16 @@ class MainViewController: UIViewController {
     var menuName : [String] = ["추천받은 책", "추천한 책"]
     
     //MARK: - UI Components
+    
+    // 상단 바
+    private let headerView = UIView().then {
+        $0.backgroundColor = .red
+    }
+    
+    private let logoLabel = UILabel().then {
+        $0.text = "Peekabook"
+        $0.font = .systemFont(ofSize: 18, weight: .bold)
+    }
     
     // Menu Tab
     private let layout : UICollectionViewFlowLayout = UICollectionViewFlowLayout().then {
@@ -107,10 +117,22 @@ extension MainViewController {
     //MARK: - setLayout
     
     private func setLayout() {
-        view.addSubviews(collectionView, pageViewController.view)
+        view.addSubviews(headerView, collectionView, pageViewController.view)
+        
+        headerView.addSubviews(logoLabel)
+        
+        headerView.snp.makeConstraints {
+            $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide)
+            $0.height.equalTo(52)
+        }
+        
+        logoLabel.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.leading.equalToSuperview().offset(20)
+        }
         
         collectionView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.top.equalTo(headerView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(52)
         }
@@ -119,6 +141,7 @@ extension MainViewController {
             $0.top.equalTo(collectionView.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
         }
+        
     }
     
     // MARK: - setUp
