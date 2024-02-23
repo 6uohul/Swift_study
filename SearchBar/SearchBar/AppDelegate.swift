@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GrammarStudy
+//  SearchBar
 //
-//  Created by 김인영 on 2023/01/29.
+//  Created by 김인영 on 2022/12/31.
 //
 
 import UIKit

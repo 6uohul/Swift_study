@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GrammarStudy
+//  AnimationStudy
 //
-//  Created by 김인영 on 2023/01/29.
+//  Created by 김인영 on 2023/04/28.
 //
 
 import UIKit
